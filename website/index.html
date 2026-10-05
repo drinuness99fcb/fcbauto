@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compacto Corretora de Seguros | Cotação Inteligente em Belo Horizonte</title>
+  <meta name="description" content="A Compacto Corretora de Seguros compara cotações em mais de 15 seguradoras parceiras em tempo real. Atendimento humanizado e tecnologia em BH.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Newsreader -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Aviso de atendimento">
+    <div class="container announcement-content">
+      <span class="badge-dot"></span>
+      <p>Atendimento inteligente 24h ativo com <strong>Sofia</strong>, consultora virtual da Compacto Seguros.</p>
+      <a href="#simulador" class="announcement-link">Experimente a cotação rápida &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" aria-label="Página inicial Compacto Seguros">
+        <div class="logo-symbol">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">COMPACTO</span>
+          <span class="logo-sub">CORRETORA DE SEGUROS</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#solucoes">Seguros</a>
+        <a href="#seguradoras">Parceiras</a>
+        <a href="#vantagens">Diferenciais</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#sobre">A Compacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:3133841487" class="btn-ghost phone-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          (31) 3384-1487
+        </a>
+        <a href="https://wa.me/5531998825005?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20cota%C3%A7%C3%A3o%20de%20seguro." target="_blank" class="btn-primary" id="btnHeaderWpp">
+          <span>Falar no WhatsApp</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section (Chatbase / Linear Inspired) -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <!-- Left Column: Value Prop -->
+      <div class="hero-content">
+        <div class="rating-badge">
+          <div class="stars">★★★★★</div>
+          <span class="rating-score">4.9</span>
+          <span class="rating-divider">·</span>
+          <span class="rating-text">Corretora credenciada SUSEP em BH</span>
+        </div>
+
+        <h1 class="hero-title">
+          Cotação inteligente de seguros, <em>sem burocracia</em> e no menor preço.
+        </h1>
+
+        <p class="hero-subtitle">
+          Pesquisamos simultaneamente nas <strong>15 maiores seguradoras do país</strong> para você economizar tempo e dinheiro. Atendimento ágil com a nossa IA <strong>Sofia</strong> e suporte de corretor especialista.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#simulador" class="btn-dark-pill" id="btnHeroSimular">
+            <span>Iniciar Cotação Grátis</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="https://wa.me/5531998825005?text=Ol%C3%A1%20Sofia!%20Vim%20pelo%20site%20da%20Compacto%20e%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o." target="_blank" class="btn-outline-pill" id="btnHeroWpp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+            <span>Conversar no WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="stat-item">
+            <span class="stat-number">+15 mil</span>
+            <span class="stat-label">Clientes atendidos</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Seguradoras parceiras</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-item">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Anos de tradição em BH</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Chatbase-style Live Demo Card -->
+      <div class="hero-interactive-card">
+        <div class="chat-mockup-wrapper">
+          <div class="chat-card-header">
+            <div class="avatar-group">
+              <div class="chat-avatar">
+                <span>S</span>
+                <span class="online-indicator"></span>
+              </div>
+              <div class="avatar-meta">
+                <span class="avatar-name">Sofia · Compacto IA</span>
+                <span class="avatar-status">Online agora • Resposta instantânea</span>
+              </div>
+            </div>
+            <div class="chat-header-tag">Multi-Cálculo Ativo</div>
+          </div>
+
+          <div class="chat-card-body" id="chatDemoBody">
+            <div class="message-bubble bubble-client">
+              <p>Olá! Queria cotar seguro para o meu carro.</p>
+              <span class="time-stamp">13:42</span>
+            </div>
+
+            <div class="message-bubble bubble-sofia">
+              <div class="sofia-tag">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-6h2zm0-8h-2V7h2z"/></svg>
+                Sofia da Compacto
+              </div>
+              <p>Olá! Tudo ótimo! 😊 Sou a Sofia da Compacto Seguros. Para eu buscar as melhores condições nas nossas 15 parceiras, qual o modelo e ano do seu carro?</p>
+              <span class="time-stamp">13:42</span>
+            </div>
+
+            <!-- Quick click triggers for demo -->
+            <div class="interactive-chips" id="demoChips">
+              <button class="chip-btn" data-reply="É um Corolla Cross 2023, renovação Porto Seguro">
+                🚗 Corolla Cross 2023 (Renovação)
+              </button>
+              <button class="chip-btn" data-reply="Tenho um Jeep Compass 2022">
+                🚙 Jeep Compass 2022
+              </button>
+              <button class="chip-btn" data-reply="Na verdade quero seguro para o meu apartamento no Buritis">
+                🏠 Quero Seguro Residencial
+              </button>
+            </div>
+
+            <!-- Status Card Inside Chat (Like Chatbase 'Plan successfully updated') -->
+            <div class="chat-status-pill" id="chatStatusPill">
+              <div class="status-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="status-info">
+                <strong>Multi-Cálculo conectado:</strong> Porto Seguro, Tokio Marine, Azul, Bradesco, Allianz, HDI.
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-card-footer">
+            <div class="input-container">
+              <input type="text" id="demoInput" placeholder="Digite uma mensagem ou clique acima..." autocomplete="off">
+              <button id="demoSendBtn" class="send-btn" aria-label="Enviar mensagem">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </div>
+            <div class="input-footer-note">
+              <span>🔒 Criptografia ponta a ponta & conformidade LGPD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner Insurers Strip (Monochrome Trust Bar like Chatbase/LocalCan) -->
+  <section class="partners-section" id="seguradoras">
+    <div class="container">
+      <p class="partners-title">COTAMOS COM AS MAIORES E MAIS CONCEITUADAS SEGURADORAS DO PAÍS</p>
+      <div class="partners-grid">
+        <div class="partner-card"><span class="partner-name">Porto Seguro</span></div>
+        <div class="partner-card"><span class="partner-name">Tokio Marine</span></div>
+        <div class="partner-card"><span class="partner-name">Azul Seguros</span></div>
+        <div class="partner-card"><span class="partner-name">Bradesco Seguros</span></div>
+        <div class="partner-card"><span class="partner-name">Allianz</span></div>
+        <div class="partner-card"><span class="partner-name">HDI Seguros</span></div>
+        <div class="partner-card"><span class="partner-name">Mapfre</span></div>
+        <div class="partner-card"><span class="partner-name">SulAmérica</span></div>
+        <div class="partner-card"><span class="partner-name">Zurich</span></div>
+        <div class="partner-card"><span class="partner-name">Liberty</span></div>
+        <div class="partner-card"><span class="partner-name">Sompo</span></div>
+        <div class="partner-card"><span class="partner-name">Unimed</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bento Grid: Modern Features (LocalCan Inspired) -->
+  <section class="features-bento" id="vantagens">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-tag">POR QUE A COMPACTO</span>
+        <h2 class="section-headline">
+          Toda a segurança de uma corretora tradicional, <em>com a velocidade da IA</em>.
+        </h2>
+        <p class="section-subtext">
+          Eliminamos o atrito na hora de contratar ou renovar seu seguro. Veja como transformamos sua experiência:
+        </p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Bento Item 1: Wide Card -->
+        <article class="bento-card bento-wide dark-bento">
+          <div class="bento-badge">01 · COMPARATIVO AUTOMATIZADO</div>
+          <h3 class="bento-title">Pesquisa simultânea em 15 seguradoras parceiras.</h3>
+          <p class="bento-desc">
+            Em vez de você ter que cotar em vários sites ou esperar dias, nosso sistema multi-cálculo cruza as tabelas de todas as companhias para entregar o maior custo-benefício.
+          </p>
+          <div class="bento-visual multi-tag-visual">
+            <span class="live-pill active">Porto Seguro · Melhor franquia</span>
+            <span class="live-pill">Tokio Marine · Melhor preço auto</span>
+            <span class="live-pill">Azul Seguros · Ótimo para apps</span>
+            <span class="live-pill">Bradesco · Ampla rede de oficinas</span>
+          </div>
+        </article>
+
+        <!-- Bento Item 2: Vertical Card -->
+        <article class="bento-card bento-tall">
+          <div class="bento-badge">02 · ATENDIMENTO NATURAL</div>
+          <h3 class="bento-title">Esqueça menus do tipo "Digite 1 para...".</h3>
+          <p class="bento-desc">
+            A Sofia atende você no WhatsApp exatamente como uma consultora humana: compreende linguagem natural, tira dúvidas na hora e agiliza sua cotação sem te fazer perder tempo.
+          </p>
+          <div class="bento-chat-snippet">
+            <div class="snippet-bubble client">"Meu seguro vence semana que vem, o que preciso?"</div>
+            <div class="snippet-bubble bot">"Basta me passar a apólice anterior ou a placa que já busco as opções com bônus mantido!"</div>
+          </div>
+        </article>
+
+        <!-- Bento Item 3: Tall Card -->
+        <article class="bento-card bento-tall">
+          <div class="bento-badge">03 · CORRETOR DEDICADO</div>
+          <h3 class="bento-title">Tecnologia com respaldo de corretor credenciado.</h3>
+          <p class="bento-desc">
+            Sua proposta é validada por um especialista da Compacto antes da emissão. Você tem um profissional responsável cuidando da sua apólice e dos seus direitos.
+          </p>
+          <div class="bento-cert-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 15l-2 5l9-11h-7l2-5l-9 11h7z"/>
+            </svg>
+            <span>Registro SUSEP Oficial • +20 Anos em BH</span>
+          </div>
+        </article>
+
+        <!-- Bento Item 4: Wide Card -->
+        <article class="bento-card bento-wide">
+          <div class="bento-badge">04 · SUPORTE TOTAL A SINISTROS</div>
+          <h3 class="bento-title">Estamos ao seu lado quando você mais precisa.</h3>
+          <p class="bento-desc">
+            Bateu o carro? Teve pane elétrica ou problema na residência? Nossa equipe e os canais de emergência 24h acionam guincho, chaveiro e oficinas credenciadas com prioridade.
+          </p>
+          <div class="bento-stats-inline">
+            <div class="stat-box">
+              <span class="num">24h</span>
+              <span class="lbl">Assistência emergencial</span>
+            </div>
+            <div class="stat-box">
+              <span class="num">100%</span>
+              <span class="lbl">Acompanhamento de sinistros</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products-section" id="solucoes">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-tag">NOSSAS SOLUÇÕES</span>
+        <h2 class="section-headline">Proteção completa para cada momento da sua vida</h2>
+        <p class="section-subtext">Trabalhamos com os ramos mais essenciais para pessoas físicas e empresas.</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Produto 1: Seguro Auto -->
+        <div class="product-card featured-product">
+          <div class="product-badge">MAIS PROCURADO</div>
+          <div class="product-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
+              <circle cx="7" cy="17" r="2"/>
+              <circle cx="17" cy="17" r="2"/>
+            </svg>
+          </div>
+          <h3 class="product-title">Seguro Automóvel</h3>
+          <p class="product-desc">Cobertura contra colisão, roubo, furto, terceiros, perda total, guincho ilimitado e carro reserva.</p>
+          <ul class="product-perks">
+            <li>✓ Cobertura completa ou personalizada</li>
+            <li>✓ Descontos para renovação com bônus</li>
+            <li>✓ Carro reserva e assistência 24h em todo o Brasil</li>
+          </ul>
+          <a href="#simulador" class="btn-product-cta" onclick="selectSimulatorTab('auto')">Cotar Seguro Auto &rarr;</a>
+        </div>
+
+        <!-- Produto 2: Seguro Residencial -->
+        <div class="product-card">
+          <div class="product-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3 class="product-title">Seguro Residencial</h3>
+          <p class="product-desc">Proteção para casas e apartamentos próprios ou alugados. Incêndio, raio, danos elétricos e roubo.</p>
+          <ul class="product-perks">
+            <li>✓ Cobertura para danos elétricos e vendaval</li>
+            <li>✓ Assistência 24h: encanador, eletricista e chaveiro</li>
+            <li>✓ Excelente custo a partir de menos de R$ 1/dia</li>
+          </ul>
+          <a href="#simulador" class="btn-product-cta" onclick="selectSimulatorTab('residencial')">Cotar Residencial &rarr;</a>
+        </div>
+
+        <!-- Produto 3: Seguro de Vida -->
+        <div class="product-card">
+          <div class="product-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <h3 class="product-title">Seguro de Vida</h3>
+          <p class="product-desc">Tranquilidade e segurança financeira para a sua família, com coberturas para doenças graves e invalidez.</p>
+          <ul class="product-perks">
+            <li>✓ Indenização isenta de imposto de renda</li>
+            <li>✓ Cobertura para diagnósticos de doenças graves</li>
+            <li>✓ Assistência funeral individual ou familiar</li>
+          </ul>
+          <a href="#simulador" class="btn-product-cta" onclick="selectSimulatorTab('vida')">Cotar Seguro de Vida &rarr;</a>
+        </div>
+
+        <!-- Produto 4: Saúde e Odonto -->
+        <div class="product-card">
+          <div class="product-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+          </div>
+          <h3 class="product-title">Saúde & Odonto</h3>
+          <p class="product-desc">Planos de saúde individuais, familiares e empresariais com Unimed, Bradesco Saúde e SulAmérica.</p>
+          <ul class="product-perks">
+            <li>✓ Ampla rede credenciada em BH e hospitais de ponta</li>
+            <li>✓ Opções com coparticipação ou sem</li>
+            <li>✓ Condições especiais para CNPJ e MEI</li>
+          </ul>
+          <a href="#simulador" class="btn-product-cta" onclick="selectSimulatorTab('saude')">Cotar Plano de Saúde &rarr;</a>
+        </div>
+
+        <!-- Produto 5: Empresarial & Condomínio -->
+        <div class="product-card">
+          <div class="product-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+              <line x1="9" y1="22" x2="9" y2="2"/>
+              <line x1="15" y1="22" x2="15" y2="2"/>
+              <line x1="4" y1="12" x2="20" y2="12"/>
+            </svg>
+          </div>
+          <h3 class="product-title">Empresarial & Condomínio</h3>
+          <p class="product-desc">Blindagem patrimonial para escritórios, comércios, indústrias e condomínios residenciais e comerciais.</p>
+          <ul class="product-perks">
+            <li>✓ Responsabilidade civil e lucros cessantes</li>
+            <li>✓ Cobertura obrigatória de condomínio</li>
+            <li>✓ Análise de risco sob medida para sua empresa</li>
+          </ul>
+          <a href="#simulador" class="btn-product-cta" onclick="selectSimulatorTab('empresarial')">Cotar Empresarial &rarr;</a>
+        </div>
+
+        <!-- Produto 6: Viagem & Outros -->
+        <div class="product-card">
+          <div class="product-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/>
+            </svg>
+          </div>
+          <h3 class="product-title">Seguro Viagem & Rural</h3>
+          <p class="product-desc">Assistência médica internacional, extravio de bagagem e proteção para frotas e produtores rurais.</p>
+          <ul class="product-perks">
+            <li>✓ Atendimento médico e hospitalar 24h no exterior</li>
+            <li>✓ Seguro obrigatório para Europa (Tratado de Schengen)</li>
+            <li>✓ Soluções para máquinas e safras agrícolas</li>
+          </ul>
+          <a href="#simulador" class="btn-product-cta" onclick="selectSimulatorTab('viagem')">Cotar Viagem &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Quotation Simulator (High Conversion) -->
+  <section class="simulator-section" id="simulador">
+    <div class="container">
+      <div class="simulator-wrapper">
+        <div class="sim-header">
+          <span class="sim-tag">SIMULADOR EXPRESS</span>
+          <h2 class="sim-title">Comece sua cotação em <em>menos de 1 minuto</em></h2>
+          <p class="sim-sub">Escolha o produto abaixo e fale diretamente com a equipe da Compacto:</p>
+        </div>
+
+        <!-- Simulator Tabs -->
+        <div class="sim-tabs" role="tablist">
+          <button class="sim-tab active" data-tab="auto" role="tab">🚗 Automóvel</button>
+          <button class="sim-tab" data-tab="residencial" role="tab">🏠 Residencial</button>
+          <button class="sim-tab" data-tab="vida" role="tab">❤️ Vida & Saúde</button>
+          <button class="sim-tab" data-tab="empresarial" role="tab">🏢 Empresa</button>
+        </div>
+
+        <!-- Simulator Form -->
+        <form class="sim-form" id="simForm" onsubmit="handleSimulatorSubmit(event)">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="simNome">Seu Nome Completo</label>
+              <input type="text" id="simNome" placeholder="Ex: Carlos Silva" required>
+            </div>
+
+            <div class="form-group">
+              <label for="simWhats">WhatsApp com DDD</label>
+              <input type="tel" id="simWhats" placeholder="(31) 99999-9999" required>
+            </div>
+
+            <div class="form-group">
+              <label for="simDetalhe" id="lblDetalhe">Modelo e Ano do Carro</label>
+              <input type="text" id="simDetalhe" placeholder="Ex: Corolla Cross 2023 ou Placa" required>
+            </div>
+
+            <div class="form-group">
+              <label for="simCep">CEP ou Bairro em BH</label>
+              <input type="text" id="simCep" placeholder="Ex: Barreiro, Buritis ou CEP" required>
+            </div>
+          </div>
+
+          <div class="form-footer">
+            <div class="form-notice">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span>Seus dados são 100% confidenciais (LGPD) e usados apenas para gerar a cotação.</span>
+            </div>
+
+            <button type="submit" class="btn-sim-submit" id="btnSubmitSimulador">
+              <span>Comparar 15 Seguradoras Agora</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <div class="sim-success-alert" id="simSuccessAlert" style="display: none;">
+          <div class="success-icon">✓</div>
+          <div class="success-msg">
+            <h4>Excelente! Solicitação recebida com sucesso.</h4>
+            <p>Nossa consultora virtual Sofia ou um corretor especialista da Compacto entrará em contato via WhatsApp em instantes!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Credibility Section (Real Compacto Info) -->
+  <section class="about-section" id="sobre">
+    <div class="container about-grid">
+      <div class="about-content">
+        <span class="section-tag">SOBRE A COMPACTO</span>
+        <h2 class="section-headline">
+          Mais de duas décadas de compromisso com a proteção de famílias e empresas mineiras.
+        </h2>
+        <p class="about-text">
+          Fundada em Belo Horizonte, a <strong>Compacto Corretora de Seguros LTDA</strong> atua guiada por um princípio fundamental: <em>"Seguro, só com Corretor de Seguros."</em>
+        </p>
+        <p class="about-text">
+          Acreditamos que contratar um seguro não deve ser um processo burocrático e distante. Por isso, aliamos nossa vasta experiência técnica com as mais modernas ferramentas de atendimento digital e inteligência artificial, garantindo aos nossos clientes as melhores coberturas pelos menores custos.
+        </p>
+
+        <div class="about-contact-cards">
+          <div class="contact-pill">
+            <div class="pill-icon">📍</div>
+            <div>
+              <strong>Sede Própria:</strong>
+              <span>Rua Conde Sant'ana, 130 - Barreiro, Belo Horizonte/MG</span>
+            </div>
+          </div>
+          <div class="contact-pill">
+            <div class="pill-icon">📞</div>
+            <div>
+              <strong>Atendimento Telefônico:</strong>
+              <span>(31) 3384-1487 · (31) 99882-5005</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-card-stat">
+        <div class="stat-highlight-box">
+          <span class="highlight-val">20+</span>
+          <span class="highlight-desc">Anos de experiência no mercado segurador brasileiro</span>
+        </div>
+        <div class="stat-highlight-box">
+          <span class="highlight-val">98.7%</span>
+          <span class="highlight-desc">Índice de renovação e satisfação dos clientes atendidos</span>
+        </div>
+        <div class="stat-highlight-box">
+          <span class="highlight-val">15</span>
+          <span class="highlight-desc">Companhias seguradoras parceiras de primeira linha</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Strip -->
+  <section class="final-cta-section">
+    <div class="container final-cta-container">
+      <h2>Pronto para proteger o que você conquistou?</h2>
+      <p>Faça sua cotação gratuita agora mesmo e surpreenda-se com os valores e a agilidade.</p>
+      <div class="final-cta-buttons">
+        <a href="https://wa.me/5531998825005?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20cota%C3%A7%C3%A3o%20de%20seguro." target="_blank" class="btn-dark-pill">
+          <span>Chamar Sofia no WhatsApp</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="tel:3133841487" class="btn-outline-pill">
+          <span>Ligar para (31) 3384-1487</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-col brand-col">
+        <div class="logo-symbol small">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <span class="footer-brand-title">COMPACTO CORRETORA DE SEGUROS</span>
+        <p class="footer-motto">"Seguro, só com Corretor de Seguros."</p>
+        <p class="footer-address">
+          Rua Conde Sant'ana, 130 - Barreiro<br>
+          Belo Horizonte / MG - CEP: 30640-460
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Seguros</h4>
+        <ul>
+          <li><a href="#solucoes">Seguro Automóvel</a></li>
+          <li><a href="#solucoes">Seguro Residencial</a></li>
+          <li><a href="#solucoes">Seguro de Vida</a></li>
+          <li><a href="#solucoes">Saúde & Odonto</a></li>
+          <li><a href="#solucoes">Empresarial & Condomínio</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Parceiras</h4>
+        <ul>
+          <li>Porto Seguro</li>
+          <li>Tokio Marine</li>
+          <li>Azul Seguros</li>
+          <li>Bradesco Seguros</li>
+          <li>Allianz & HDI</li>
+          <li>SulAmérica & Mapfre</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato Direto</h4>
+        <ul>
+          <li><strong>Tel:</strong> (31) 3384-1487</li>
+          <li><strong>WhatsApp:</strong> (31) 99882-5005</li>
+          <li><strong>Plantão:</strong> (31) 98829-5005</li>
+          <li><strong>E-mail:</strong> atendimento@compactoseguros.com.br</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Compacto Corretora de Seguros LTDA · CNPJ & Registro SUSEP Ativos · Todos os direitos reservados.</p>
+      <div class="footer-legal-links">
+        <a href="#">Privacidade & LGPD</a>
+        <span>·</span>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Sofia WhatsApp Widget -->
+  <div class="floating-wpp-widget" id="floatingWidget">
+    <div class="widget-popup" id="widgetPopup">
+      <div class="popup-header">
+        <div class="popup-avatar">
+          <span>S</span>
+          <span class="online-indicator"></span>
+        </div>
+        <div class="popup-meta">
+          <strong>Sofia · Compacto Seguros</strong>
+          <span>Online agora • Atendimento 24h</span>
+        </div>
+        <button class="popup-close" id="popupClose" aria-label="Fechar pop-up">&times;</button>
+      </div>
+      <div class="popup-body">
+        <p>Olá! Tudo bem? 😊</p>
+        <p>Quer comparar os preços de seguro auto ou residencial nas melhores companhias hoje?</p>
+      </div>
+      <div class="popup-footer">
+        <a href="https://wa.me/5531998825005?text=Ol%C3%A1%20Sofia!%20Vim%20pelo%20site%20e%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o." target="_blank" class="popup-btn">
+          <span>Iniciar conversa</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </div>
+    </div>
+
+    <button class="floating-btn" id="floatingToggle" aria-label="Abrir chat">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+      </svg>
+      <span class="unread-badge">1</span>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
